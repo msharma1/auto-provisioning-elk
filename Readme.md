@@ -29,4 +29,4 @@ pip install requests
 
 
 
-ansible-playbook -i inventory elk.yml --connection=local
+sudo ansible-playbook -i inventory elk.yml --connection=local

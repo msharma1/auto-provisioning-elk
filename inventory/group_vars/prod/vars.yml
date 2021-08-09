@@ -3,8 +3,8 @@ network_name: esnet
 
 nginx_image: nginx:1.15-alpine
 nginx_hostname: ng01
-nginx_conf_dir: /usr/share/nginx
-
+nginx_conf_dir: /etc/nginx
+# /usr/share/nginx
 elasticsearch_image: docker.elastic.co/elasticsearch/elasticsearch:7.4.0
 elasticsearch_hostname: es01
 elasticsearch_conf_dir: /usr/share/elasticsearch
@@ -14,8 +14,8 @@ kibana_hostname: ki01
 
 logstash_image: docker.elastic.co/logstash/logstash:7.4.0
 logstash_hostname: lo01
-logstash_conf_dir: /usr/share/logstash
-
+logstash_conf_dir: /etc/logstash
+# /usr/share/logstash
 certbot_image: certbot/certbot
 certbot_hostname: cb01
 certbot_conf_dir: /usr/share/certbot
